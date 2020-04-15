@@ -28,7 +28,7 @@ cotacoesForm.addEventListener('submit', () => {
 		console.log('O ativo deve ser informado')
 		return
 	}
-	fetch(`http://localhost:3000/cotacoes?ativo=${ativo}`).then((response) => {
+	fetch(`/cotacoes?ativo=${ativo}`).then((response) => {
 		//('http://localhost:3000/cotacoes?ativo='+ativo)
 	    response.json().then((data) => {
 	        if(data.error){
